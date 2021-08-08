@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  font-family: "Comfortaa", Comfortaa;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #bd4b4b, #ff67e7, #ffdab9, #c400ff);
+  /*linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+
+  /*.color-change-5x{-webkit-animation:color-change-5x 10s ease-in-out infinite alternate-reverse both;animation:color-change-5x 10s ease-in-out infinite alternate-reverse both}*/
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.atas {
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.image-atas {
+  box-shadow: 5px 5px 16px 5px red;
+  border: 10px solid #de5de7;
+  border-radius: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  width: 200px;
+  height: auto;
+
+  transition: transform 500ms ease-in-out 25ms;
+}
+
+.image-atas:hover {
+  transform: translateX(0px) translateY(-15px);
+  transition: transform 500ms ease-in-out 25ms;
+}
+
+.image-bawah {
+  box-shadow: 5px 5px 16px 5px red;
+  border: 10px solid #de5de7;
+  border-radius: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  width: auto;
+  height: 300px;
+  transition: transform 500ms ease-in-out 25ms;
+}
+
+.image-bawah:hover {
+  transform: translateX(0px) translateY(-15px);
+  transition: transform 500ms ease-in-out 25ms;
+}
+
+.deskripsi-ldr {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.card-notes-nisa {
+  border-radius: 20px;
+  box-shadow: 5px 5px 16px 5px red;
+  margin-top: 50px !important;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  color: rgb(86, 69, 69);
+  background-color: white;
+  width: 500px;
+  height: auto;
+}
+
+.title-bonus {
+  margin-top: 70px;
+}
+
+.penutup {
+  margin-top: 30px;
+}
+.audio-nisa {
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  .card-notes-nisa {
+    border-radius: 20px;
+    box-shadow: 5px 5px 16px 5px red;
+    margin-top: 50px !important;
+    display: block;
+
+    padding: 7px;
+    color: rgb(86, 69, 69);
+    background-color: white;
+    width: 300px;
+    height: auto;
+    font-size: 14px;
+  }
+}
